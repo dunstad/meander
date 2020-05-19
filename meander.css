@@ -1,0 +1,19 @@
+body {
+  background-color: grey;
+  overflow: hidden;
+}
+
+#art {
+  display: block;
+  background-color: aquamarine;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  height: 40vh;
+}
+
+#choices {
+  display: block;
+  background-color: aquamarine;
+  margin-bottom: 5vh;
+  height: 45vh;
+}
