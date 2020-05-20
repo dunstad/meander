@@ -14,3 +14,8 @@ body {
   background-color: aquamarine;
   height: 45vh;
 }
+
+button {
+  margin-top: 15px;
+  width: 100%;
+}
