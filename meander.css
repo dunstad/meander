@@ -6,12 +6,16 @@ body {
 .content {
   background-color: #cdddff;
   border-radius: 15px;
+  margin-bottom: 5vh;
 }
 
 #art {
   margin-top: 5vh;
-  margin-bottom: 5vh;
   width: 100%;
+}
+
+#text {
+  padding: 15px;
 }
 
 #choices {

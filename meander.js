@@ -6,6 +6,7 @@ game.scenes = {
 
   one: {
     image: 'test.png',
+    text: 'this is scene one.',
     buttons: [
       {
         text: 'hello hello hello',
@@ -22,6 +23,7 @@ game.scenes = {
   
   two: {
     image: 'test2.png',
+    text: 'this is scene two.',
     buttons: [
       {
         text: 'hello again',
@@ -42,13 +44,15 @@ function loadScene(scene) {
 
   document.getElementById('art').src = scene.image;
 
+  document.getElementById('text').textContent = scene.text;
+
   let choices = document.getElementById('choices');
   
   while (choices.firstChild) {
     choices.removeChild(choices.firstChild);
   }
   
-  for (let butt of scene.buttons) {
+  for (let butt of scene.buttons) { // haha
     let div = document.createElement('div');
     div.classList.add('col-12');
     
