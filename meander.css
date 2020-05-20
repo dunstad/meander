@@ -3,15 +3,18 @@ body {
   overflow: hidden;
 }
 
-#art {
+.content {
   background-color: aquamarine;
+  border-radius: 15px;
+}
+
+#art {
   margin-top: 5vh;
   margin-bottom: 5vh;
   height: 40vh;
 }
 
 #choices {
-  background-color: aquamarine;
   height: 45vh;
 }
 
