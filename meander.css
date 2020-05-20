@@ -4,7 +4,6 @@ body {
 }
 
 #art {
-  display: block;
   background-color: aquamarine;
   margin-top: 5vh;
   margin-bottom: 5vh;
@@ -12,8 +11,6 @@ body {
 }
 
 #choices {
-  display: block;
   background-color: aquamarine;
-  margin-bottom: 5vh;
   height: 45vh;
 }
