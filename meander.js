@@ -40,7 +40,10 @@ game.scenes = {
 
 };
 
-function loadScene(scene) {
+function loadScene(sceneName) {
+
+  let scene = game.scenes[sceneName];
+  localStorage.setItem(sceneName, true);
 
   document.getElementById('art').src = scene.image;
 
@@ -59,7 +62,7 @@ function loadScene(scene) {
     let button = document.createElement('button');
     button.classList.add('btn', butt.color);
     button.textContent = butt.text;
-    button.onclick = ()=>{loadScene(game.scenes[butt.next]);};
+    button.onclick = ()=>{loadScene(butt.next);};
     
     div.appendChild(button);
     choices.appendChild(div);
@@ -68,7 +71,7 @@ function loadScene(scene) {
 }
 
 function main() {
-  loadScene(game.scenes.one);
+  loadScene('one');
 }
 
 main();
