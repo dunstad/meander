@@ -4,6 +4,145 @@ var game = {};
 
 game.scenes = {
 
+  field: {
+    image: 'field.png',
+    text: 'this is scene one.',
+    buttons: [
+      {
+        text: 'hello hello hello',
+        next: 'farm1',
+        color: 'pastel-green'
+      },
+      {
+        text: 'hello hello hello',
+        next: 'forest1',
+        color: 'pastel-green'
+      },
+      {
+        text: 'hello hello hello',
+        next: 'town1',
+        color: 'pastel-green'
+      },
+      {
+        text: 'world',
+        next: 'lake1',
+        color: 'pastel-orange'
+      },
+    ],
+  },
+  farm1: {
+    image: 'farm1.png',
+    text: 'this is scene one.',
+    buttons: [
+      {
+        text: 'hello hello hello',
+        next: 'farm2',
+        color: 'pastel-green'
+      },
+      {
+        text: 'world',
+        next: 'field',
+        color: 'pastel-orange'
+      },
+    ],
+  },
+  farm2: {
+    image: 'farm2.png',
+    text: 'this is scene one.',
+    buttons: [
+      {
+        text: 'hello hello hello',
+        next: 'field',
+        color: 'pastel-green'
+      },
+    ],
+  },
+  forest1: {
+    image: 'forest1.png',
+    text: 'this is scene one.',
+    buttons: [
+      {
+        text: 'hello hello hello',
+        next: 'forest2',
+        color: 'pastel-green'
+      },
+      {
+        text: 'world',
+        next: 'field',
+        color: 'pastel-orange'
+      },
+    ],
+  },
+  forest2: {
+    image: 'forest2.png',
+    text: 'this is scene one.',
+    buttons: [
+      {
+        text: 'hello hello hello',
+        next: 'field',
+        color: 'pastel-green'
+      },
+    ],
+  },
+  town1: {
+    image: 'town1.png',
+    text: 'this is scene one.',
+    buttons: [
+      {
+        text: 'hello hello hello',
+        next: 'town2',
+        color: 'pastel-green'
+      },
+      {
+        text: 'world',
+        next: 'field',
+        color: 'pastel-orange'
+      },
+    ],
+  },
+  town2: {
+    image: 'town2.png',
+    text: 'this is scene one.',
+    buttons: [
+      {
+        text: 'hello hello hello',
+        next: 'field',
+        color: 'pastel-green'
+      },
+    ],
+  },
+  lake1: {
+    image: 'lake1.png',
+    text: 'this is scene one.',
+    buttons: [
+      {
+        text: 'hello hello hello',
+        next: 'lake2',
+        color: 'pastel-green'
+      },
+      {
+        text: 'world',
+        next: 'field',
+        color: 'pastel-orange'
+      },
+    ],
+  },
+  lake2: {
+    image: 'lake2.png',
+    text: 'this is scene one.',
+    buttons: [
+      {
+        text: 'hello hello hello',
+        next: 'field',
+        color: 'pastel-green'
+      },
+    ],
+  },
+  end: {
+    image: 'end.png',
+    text: "You've seen all there is to see. Thanks!",
+    buttons: [],
+  },
   one: {
     image: 'test.png',
     text: 'this is scene one.',
@@ -71,7 +210,7 @@ function loadScene(sceneName) {
 }
 
 function main() {
-  loadScene('one');
+  loadScene('field');
 }
 
 main();
