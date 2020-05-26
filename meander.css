@@ -1,6 +1,6 @@
 body {
   background-color: #cdcbfc;
-  /* overflow: hidden; */
+  overflow-x: hidden;
 }
 
 .content {
